@@ -1,0 +1,111 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-item-1{
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.spiderman{
+    width: 145%;
+    transform: translate3d(-170px, 0, 0);
+}
+
+/* Botão Compre agora */
+.btn{
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 3px;
+    transform: skew(-10deg);    // coloca o botão na diagonal
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    background: linear-gradient(267.72deg, #EA1D22 0.88%, #B31317 100%);
+    position: relative;
+
+    // Colocar a borda personalizada ao passar o mouse sobre
+    // Borda superior esquerda
+    &::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        display: block;
+        opacity: 0;     // omite a borda sem passar o mouse
+        width: 30%;
+        height: 70%;
+        transition: 0.7s ease;
+        border-radius: 3px;
+        border-top: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    // Borda superior direita
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        right: -2px;
+        display: block;
+        opacity: 0;     // omite a borda sem passar o mouse
+        width: 30%;
+        height: 70%;
+        transition: 0.7s ease;
+        border-radius: 3px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+    }
+
+    // Exibindo as bordas ao passar o mouse
+    &:hover{
+        transform: skew(-10deg) scale(1.05);
+        &::after{
+            opacity: 1;     // exibe a borda superior esquerda ao passar o mouse
+        }
+        &::before{
+            opacity: 1;     // exibe a borda inferior direita ao passar o mouse
+        }
+    }
+}
+
+/* Botão Assista ao trailer */
+.btn-secondary{
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 3px;
+    transform: skew(-10deg);    // coloca o botão na diagonal
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    background: transparent;
+    position: relative;
+    border: 2px solid $red;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 0%;
+        height: 103%;
+        transition: 0.7s ease;
+        background: linear-gradient(267.72deg, #EA1D22 0.88%, #B31317 100%);
+        z-index: -1;
+    }
+
+    &:hover{
+        &::after{
+            width: 102%;
+        }
+    }
+}
