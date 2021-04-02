@@ -317,6 +317,11 @@ body {
   background: #0A0C10;
 }
 
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #0f1012), to(#3f0808));
+  background: linear-gradient(90deg, #0f1012 35%, #3f0808 100%);
+}
+
 img, svg {
   display: block;
   width: 100%;
@@ -332,10 +337,17 @@ a {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #A1A3A5;
   letter-spacing: 1px;
   line-height: 140%;
+}
+
+h1 {
+  color: #EDF1F7;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .container {
@@ -556,6 +568,27 @@ p {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
+}
+
+.miles {
+  width: 100%;
+  height: 100%;
+  margin-top: 115px;
+}
+
+@media screen and (max-width: 960px) {
+  .miles {
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+    width: 100%;
+    margin-top: -20px;
+  }
+}
+
+.spider-marker {
+  width: 20%;
+  height: 4px;
+  background-color: #A1A3A5;
 }
 
 .bg-video {
