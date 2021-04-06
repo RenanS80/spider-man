@@ -14,7 +14,7 @@ https://www.figma.com/file/30ZeKwpUf5iGMkTVFNxGGB/Spider-Man-Miles-Morales
 ---
 ## 🎬 Interface 
 <img src="video/spiderman.gif">
---- 
+
 
 ## 💻 Tecnologias utilizadas
 O projeto foi desenvolvido com as seguintes tecnologias: <br>
