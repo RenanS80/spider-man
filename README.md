@@ -25,9 +25,5 @@ O projeto foi desenvolvido com as seguintes tecnologias: <br>
     <li>Javascript</li>
 </ul>
 
-
-
-
-
 --- 
 Desenvolvido por Renan Soares Ferreira
