@@ -3,7 +3,7 @@
 </h1>
 
 ## 📃 Sobre
-Este projeto foi desenvolvido com base na minha prototipação realizada no Figma e consiste  nas telas de exibição, informação sobre a história e wallpapers do jogo <strong>Spider-Man: Miles Morales</strong>    <br>
+Este projeto foi desenvolvido com base na prototipação realizada no Figma e consiste nas telas de exibição, informação sobre a história e wallpapers do jogo <strong>Spider-Man: Miles Morales</strong>    <br>
 
 Prototipação:
 https://www.figma.com/file/30ZeKwpUf5iGMkTVFNxGGB/Spider-Man-Miles-Morales
